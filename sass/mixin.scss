@@ -1,0 +1,14 @@
+@mixin flex {
+    display: flex;
+    flex-direction:row;
+    }
+    @mixin center{
+        display: flex;
+        align-items: center;
+    }
+    @mixin fond {
+        padding: 27px 0;
+        margin-top: -39px;
+        background-color: (rgb(235, 235, 235));
+        border-radius: 45px 45px 0 0; 
+    }

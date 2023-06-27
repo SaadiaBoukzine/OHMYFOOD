@@ -1,0 +1,136 @@
+//* loader*/
+@keyframes loader{
+  0%{
+      opacity: 1;
+      transform: rotate(0deg);
+  }
+  80%{
+      opacity: 0.8;
+  }
+  100% {
+      transform: rotate(360deg);
+      opacity: 0;   
+  }
+}
+@keyframes hiddenLoader{
+0%{
+  opacity: 1;
+  box-shadow:2px 2px 7px rgba(220, 25, 184, 0.8),
+ 
+
+}
+80%{
+  opacity: 0.8;
+  box-shadow:2px 2px 7px rgba(220, 25, 184, 0.8),
+ 
+}
+100% {
+opacity: 0;  
+display: none;
+z-index: -5;
+ 
+}
+}
+
+
+// *menu check*/
+@keyframes animMenu {
+    0% {
+      width: 100%;
+      }
+    100% {
+        width : 80%;
+    }
+  }
+
+  @keyframes animMen2{
+    0% {
+      width: 80%;
+    }
+    100% {
+        width : 100%;
+    }
+  }
+  @keyframes animCheck {
+    0% {
+      width: 0%;
+    }
+    100% {
+        width : 20%;
+    }
+  }
+ 
+  @keyframes animCheck2 {
+    0% {
+      width: 20%;
+      }
+    100% {
+        width : 0%;
+        
+    }
+  }
+  .menu{
+    background-color: $blanc;
+    border-radius: 15px ;
+    width: 109%;
+    @include flex;
+    flex-direction: row;
+    margin: 0; 
+ 
+    & h3 {
+        width: auto;
+    }
+    &:hover .menu_description{       
+        animation-name: animMenu;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-delay: 0ms;        
+    }
+    &:hover .borderchek{            
+        animation-name: animCheck;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        animation-delay: 0ms;        
+        }         
+
+    &:not(:hover) .menu_description{
+            animation-name: animMen2;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+            animation-delay: 0ms;
+    }
+    &:not(:hover) .borderchek{
+            animation-name: animCheck2;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+            animation-delay: 0ms;
+    }
+}
+
+
+//* apparition menu*/
+
+@keyframes menu {
+  0%{ 
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100%{ 
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.menu{
+  animation: menu 1s;
+  animation-fill-mode: both;
+}
+.menu{
+  @for $i from 1 through 4{
+    &:nth-of-type(#{$i})
+    {
+      animation-delay: 1.6s * $i;
+    }
+  }
+
+}

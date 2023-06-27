@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* generale */
+body {
+  font-family: "Roboto";
+  margin: 0 0 10px 0;
+  max-width: 100%;
+}
+
+.loaderCont {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(245, 242, 244, 0.788);
+  animation: hiddenLoader 3s linear;
+  animation-fill-mode: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loaderCont .loader {
+  height: 300px;
+  width: 250px;
+  border: 16px solid #9356DC;
+  border-top: 16px solid #FF79DA;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #f166be;
+  animation: loader 3s linear;
+  animation-fill-mode: both;
+}
+
+.loaderCont p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: "Shrikhand";
+  color: #9356DC;
+}
+
+/*image restaurant 1234*/
+.restaurantmenu {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 27px 0;
+  margin-top: -39px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 45px 45px 0 0;
+}
+
+.imaglatable {
+  width: 100%;
+}
+
+/*# sourceMappingURL=base.css.map */

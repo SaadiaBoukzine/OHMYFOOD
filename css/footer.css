@@ -1,0 +1,52 @@
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 15px;
+  margin-top: 10px;
+  width: 100%;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+footer article {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+footer article a {
+  margin-top: 11px;
+  text-decoration: none;
+  color: white;
+}
+footer article i {
+  margin-right: 10px;
+}
+
+/* commander restaurant 1234 */
+.titlebutton {
+  width: 220px;
+  height: 50px;
+  margin: 30px auto;
+  border-radius: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 2px 2px 7px rgba(99, 99, 99, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  text-transform: unset;
+  transition: 1s;
+  background-size: 250%;
+}
+.titlebutton:hover {
+  background-image: linear-gradient(rgba(147, 86, 220, 0.8392156863), #FF79DA);
+  box-shadow: 2px 2px 7px rgba(99, 99, 99, 0.8);
+  opacity: 0.8;
+  transform: translate(0, -2px);
+}
+
+/*# sourceMappingURL=footer.css.map */

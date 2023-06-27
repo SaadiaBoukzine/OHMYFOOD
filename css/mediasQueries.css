@@ -1,0 +1,252 @@
+@media screen and (min-width: 1024px) and (max-width: 4440px) {
+  body {
+    max-width: 100%;
+    align-content: center;
+    margin: 0;
+    flex-direction: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .restaurantmenu {
+    margin-left: 150px;
+    width: 78%;
+    align-items: center;
+  }
+  .restaurantmenu .titremenu {
+    justify-content: space-between;
+    /* coeur plein*/
+    /* coeur vide */
+  }
+  .restaurantmenu .titremenu h1 {
+    margin-left: -66px;
+  }
+  .restaurantmenu .titremenu .coeurPlein {
+    left: 63%;
+    top: 69px;
+    font-size: 40px;
+  }
+  .restaurantmenu .titremenu .fa-regular {
+    left: 63.2%;
+    font-size: 35px;
+    top: 52px;
+  }
+  .prix {
+    margin-right: 25px;
+  }
+  .cartemenu {
+    margin: 1px 0px 40px 0px;
+  }
+  .menu {
+    width: 100%;
+  }
+  .menu p {
+    margin-right: 0px;
+  }
+  .resto {
+    background-color: #f7f7f7;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .resto h2 {
+    position: relative;
+    margin: 0;
+    padding: 55px 1104px 20px 0;
+    text-indent: 6%;
+    font-size: 1.5rem;
+  }
+  main .imaglatable img {
+    width: 100%;
+  }
+  .flech {
+    width: 55%;
+  }
+  .flech i {
+    width: 25px;
+  }
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: normal;
+    margin-left: 19px;
+    margin-bottom: 63px;
+  }
+  .fonctionnement h2 {
+    position: relative;
+    margin: 0;
+    padding: 55px 1080px 20px 0;
+    font-size: 1.5rem;
+  }
+  .fonctionnement .fonctionnementnumero:hover {
+    box-shadow: 2px 2px 7px rgba(99, 99, 99, 0.8);
+  }
+  .fonctionnementbutton {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+  }
+  .carttitre {
+    display: flex;
+  }
+  section body {
+    margin: 0;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cards .cardimg {
+    width: 48%;
+  }
+  .cards .cardimg:hover {
+    box-shadow: 2px 2px 7px rgba(99, 99, 99, 0.8);
+    transform: translate(0, -2px);
+  }
+  .cards .cardimg img {
+    width: 100%;
+  }
+  .cards h2 {
+    margin-top: 12px;
+  }
+  footer {
+    margin-right: 2px;
+    margin-right: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    gap: 113px;
+  }
+  footer article {
+    display: flex;
+    flex-direction: row;
+  }
+  footer article a {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .nouveau {
+    left: 85%;
+    width: 70px;
+  }
+}
+@media screen and (min-width: 766.8px) and (max-width: 1024.9px) {
+  .imaglatable {
+    height: 264px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .flech {
+    width: 60%;
+  }
+  .imaglatable img {
+    width: 100%;
+  }
+  .restaurantmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
+  .fonctionnement {
+    display: flex;
+  }
+  .fonctionnement.fonctionnementbutton {
+    flex-direction: row;
+  }
+  .cardimg {
+    width: 100%;
+  }
+  .cardimg:hover {
+    box-shadow: 2px 2px 7px rgba(99, 99, 99, 0.8);
+    transform: translate(0, -2px);
+  }
+  .cardimg img {
+    width: 98%;
+    object-fit: cover;
+  }
+  .cardtext .text i {
+    margin-right: 10px;
+  }
+  .nouveau {
+    left: 80%;
+    bottom: 258px;
+    width: 70px;
+  }
+  .titremenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* coeur vide */
+  }
+  .titremenu h1 {
+    margin-left: 10px;
+    font-family: "Shrikhand";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 41px;
+    margin: 21px 131px 23px 23px;
+  }
+  .titremenu .coeurPlein {
+    font-size: 41px;
+    left: 76%;
+    top: 69px;
+  }
+  .titremenu .fa-regular {
+    left: 76%;
+    font-size: 38px;
+  }
+  .cards p {
+    margin-left: 10px;
+    margin-top: 22px;
+  }
+  .menu {
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+  .menu:hover .menu_description {
+    animation-name: animMenu;
+    animation-duration: 3s;
+    animation-fill-mode: none;
+    animation-delay: 0ms;
+  }
+  .menu:hover .borderchek {
+    animation-name: animCheck;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 0ms;
+  }
+  .menu:not(:hover) .menu_description {
+    animation-name: animMen2;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 0ms;
+  }
+  .menu:not(:hover) .borderchek {
+    animation-name: animCheck2;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 0ms;
+  }
+}
+
+/*# sourceMappingURL=mediasQueries.css.map */

@@ -1,0 +1,57 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+footer{
+   background-color:#353535; 
+   color: white;
+   padding: 15px;
+   margin-top: 10px;
+   width: 100%;
+   & h3{
+    font-family: 'Shrikhand';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+   }
+    & article{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    & a{
+       margin-top: 11px;
+       text-decoration: none;
+       color: white;
+    }
+    & i {
+        margin-right: 10px;
+    }
+   }
+}
+
+/* commander restaurant 1234 */
+
+.titlebutton {
+    width: 220px;
+    height: 50px;
+    margin: 30px auto;
+    border-radius: 30px;
+    background: $background;
+    box-shadow: $shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    text-transform:unset;
+    transition: 1s;
+    background-size: 250%;
+    &:hover{
+        background-image: linear-gradient(
+            #9356DCD6,$rose,);
+            box-shadow: $shadow;
+            opacity: 0.8;
+            transform: translate(0,-2px);
+    }
+        
+  }
+  

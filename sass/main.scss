@@ -1,0 +1,292 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+/* Paris, Belleville */
+
+main{
+margin-top: -20px;
+}
+/* Explorer nos resto */
+.titleexplorer{
+text-align: center;
+background: $gris;
+padding-bottom: 30px;
+  } 
+  
+.titlebutton{
+    width: 220px;
+    height: 50px;
+    margin: 30px auto;
+    border-radius: 30px;
+    background: linear-gradient(#FF79DA,#9356DC);
+    box-shadow: 2px 2px 7px rgba(99, 99, 99, 0.8);
+    @include center;
+    justify-content: center;
+    color: $blanc;
+}
+/* Réservez le menu qui vous convient */
+
+.city{
+@include center;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+gap: 17px;
+background: #EAEAEA;
+
+ }
+/* fonctionnement */
+.fonctionnement{
+    @include center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    & .fonctionnementnumero{
+        @include center;
+        flex-direction: row; 
+        background-color: $gris;
+        border-radius: 15px;
+        height: 72px;
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      
+        & p{
+            border: $rose;
+            margin-left: -10px;
+            height: 27px;
+            width: 27px;
+            background: $vio;
+            border-radius: 20px;
+            @include center;
+            justify-content: center;
+            color: $blanc;
+            }
+        }
+    & button{
+    @include center;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    background: $gris; 
+    width: 266px;
+    }
+}
+
+.nouveau{
+     background: $vert;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    color:#008766;
+    width: 64px;
+    height: 23px;
+    left: 76%;
+    bottom: 300px;  
+    position: relative;      
+}
+.icone{
+  margin: 10px;
+  color: #7E7E7E;
+}
+.color{
+   color: $vio;
+}
+/* Restaurants */
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    & h2{
+        margin-left:12px;
+    }
+}
+.cards{
+display: flex;
+flex-direction: column;
+    & img{
+        width: 100%;
+        height: 224px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        margin-left: -13px;
+    }
+    & p{
+       margin-left: 10px;
+
+    }
+}
+.imaglatable img{
+    width: 100%;
+    height: 264px;
+    object-fit: cover;
+}
+.cardtext{
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    
+    .restotext{
+        position: relative;
+        @include center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: -33px;
+        margin-right: 10px;
+        margin-left: 10px;
+        
+    }
+}
+    .cardimg{
+        background: #FFFFFF;
+        border-radius: 20px;
+        margin: 10px ;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        object-fit: contain;
+        &:hover{
+            box-shadow:$shadow;
+            transform: translate(0,-2px);
+       }
+}
+
+
+// menu restaurant 1*2*3*4/
+.resto{ 
+    background-color: $gris;
+    margin-top: 30px;
+  }
+.titremenu{
+    @include center;
+    flex-direction: row;
+    justify-content: space-between;
+    & h1{
+    margin-left: 10px;
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 41px;
+    margin: 21px;
+    } 
+ }
+ .cartemenu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    width: 90%;
+    justify-content: center;
+
+    & h4{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 19px;
+        text-transform: uppercase;
+        margin: 20px 0px 8px 6px;
+        padding-bottom: 12px;
+        &:after {
+            display: block;
+            content: "";
+            background-color: $vert;
+            margin-top: 5px;
+            height: 4px;
+            width: 40px;  
+    }
+    }
+ }
+
+.menu{
+    background-color: $blanc;
+    border-radius: 15px ;
+    width: 109%;
+    @include flex;
+    flex-direction: row;
+    margin: 0; 
+ 
+    & h3 {
+        width: auto;
+    }
+    &:hover .menu_description{       
+        animation-name: animMenu;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-delay: 0ms;        
+    }
+    &:hover .borderchek{            
+        animation-name: animCheck;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-delay: 0ms;        
+        }         
+
+    &:not(:hover) .menu_description{
+            animation-name: animMen2;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+            animation-delay: 0ms;
+    }
+    &:not(:hover) .borderchek{
+            animation-name: animCheck2;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+            animation-delay: 0ms;
+    }
+}
+.descriptionplat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.descriptionplat p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px 17px 10px 15px;
+    font-size: 15.6px;
+}
+
+.menu_description h3 {
+    margin: 6px 17px 10px 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.menu_description{
+    display : flex;
+    flex-direction: column;
+    width: 100%;  
+}
+    
+.borderchek{
+    display: flex;
+    width: 0%;   
+    background-color: $vert;
+    font-size: 33px;
+    text-align: center;     
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    overflow: hidden;   
+    justify-content: center;
+    align-content: center;
+    align-items: center;   
+ }
+
+.insertChek{
+    color: $blanc;
+    display: flex;
+    margin-top: 2px;
+    margin-left: 10px;
+    transition: revert;
+    &:hover{
+        transform: rotateX(350deg);
+        transition: 0.5s ease-in-out;
+    }
+}
