@@ -3,7 +3,7 @@
 
 
 @media screen and (min-width:1024px) and (max-width: 4440px){  
-   body{
+   body .affichage{
     max-width: 100%;
     align-content: center;
     margin: 0;
@@ -85,7 +85,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
-      align-items:normal ;
+      align-items:center ;
       margin-left: 19px;
       margin-bottom: 63px;
       & h2{
@@ -103,7 +103,8 @@
   .fonctionnementbutton{
       display: flex;
       flex-direction: row;
-      gap:38px
+      gap:38px;
+      width: 50%;
     }
 
   .carttitre{
