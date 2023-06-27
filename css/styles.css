@@ -493,6 +493,34 @@ footer article i {
     width: 0%;
   }
 }
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.menu {
+  animation: menu 1s;
+  animation-fill-mode: both;
+}
+
+.menu:nth-of-type(1) {
+  animation-delay: 1.6s;
+}
+.menu:nth-of-type(2) {
+  animation-delay: 3.2s;
+}
+.menu:nth-of-type(3) {
+  animation-delay: 4.8s;
+}
+.menu:nth-of-type(4) {
+  animation-delay: 6.4s;
+}
+
 .menu {
   background-color: white;
   border-radius: 15px;
@@ -528,34 +556,6 @@ footer article i {
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-delay: 0ms;
-}
-
-@keyframes menu {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-.menu {
-  animation: menu 1s;
-  animation-fill-mode: both;
-}
-
-.menu:nth-of-type(1) {
-  animation-delay: 1.6s;
-}
-.menu:nth-of-type(2) {
-  animation-delay: 3.2s;
-}
-.menu:nth-of-type(3) {
-  animation-delay: 4.8s;
-}
-.menu:nth-of-type(4) {
-  animation-delay: 6.4s;
 }
 
 /*****************coeur  index*******************/

@@ -69,44 +69,7 @@ z-index: -5;
         
     }
   }
-  .menu{
-    background-color: $blanc;
-    border-radius: 15px ;
-    width: 109%;
-    @include flex;
-    flex-direction: row;
-    margin: 0; 
  
-    & h3 {
-        width: auto;
-    }
-    &:hover .menu_description{       
-        animation-name: animMenu;
-        animation-duration: 3s;
-        animation-fill-mode: both;
-        animation-delay: 0ms;        
-    }
-    &:hover .borderchek{            
-        animation-name: animCheck;
-        animation-duration: 2s;
-        animation-fill-mode: both;
-        animation-delay: 0ms;        
-        }         
-
-    &:not(:hover) .menu_description{
-            animation-name: animMen2;
-            animation-duration: 2s;
-            animation-fill-mode: both;
-            animation-delay: 0ms;
-    }
-    &:not(:hover) .borderchek{
-            animation-name: animCheck2;
-            animation-duration: 2s;
-            animation-fill-mode: both;
-            animation-delay: 0ms;
-    }
-}
-
 
 //* apparition menu*/
 
@@ -133,4 +96,41 @@ z-index: -5;
     }
   }
 
+}
+.menu{
+  background-color: $blanc;
+  border-radius: 15px ;
+  width: 109%;
+  @include flex;
+  flex-direction: row;
+  margin: 0; 
+
+  & h3 {
+      width: auto;
+  }
+  &:hover .menu_description{       
+      animation-name: animMenu;
+      animation-duration: 3s;
+      animation-fill-mode: both;
+      animation-delay: 0ms;        
+  }
+  &:hover .borderchek{            
+      animation-name: animCheck;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      animation-delay: 0ms;        
+      }         
+
+  &:not(:hover) .menu_description{
+          animation-name: animMen2;
+          animation-duration: 2s;
+          animation-fill-mode: both;
+          animation-delay: 0ms;
+  }
+  &:not(:hover) .borderchek{
+          animation-name: animCheck2;
+          animation-duration: 2s;
+          animation-fill-mode: both;
+          animation-delay: 0ms;
+  }
 }
